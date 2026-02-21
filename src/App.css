@@ -1,0 +1,40 @@
+/* --- Global Background --- */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #c2d8f1; /* Clean light blue / Ice blue */
+  color: #334e68; /* Deep blue-grey for better readability on light blue */
+}
+
+.App main {
+  padding-top: 80px; /* Space for fixed navbar */
+  background-color: #f0f7ff; /* Match body background */
+}
+
+/* --- Section spacing --- */
+section {
+  padding: 5rem 0; /* Slightly more padding for a breathable look */
+}
+
+/* --- Responsive Flex --- */
+@media (max-width: 768px) {
+  .projects-container, 
+  .certifications-container, 
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  /* Resetting home logic to match your clean profile shadow style */
+  .home-left, .home-right {
+    flex: 0 0 100%;
+    text-align: center;
+  }
+
+  .image-frame {
+    width: 220px; /* Compact size for mobile */
+    height: 220px;
+    margin: 0 auto;
+  }
+}

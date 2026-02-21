@@ -1,0 +1,123 @@
+#certificates {
+  padding: 80px 5%;
+  background-color: #e6f0fc; /* Ice Blue Background */
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 40px;
+  color: #00366b;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: "";
+  width: 60%;
+  height: 3px;
+  background-color: #00366b;
+  display: block;
+  margin: 10px auto 0 auto;
+}
+
+.certifications-container {
+  display: grid;
+  /* This creates exactly 4 equal columns on desktop */
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 20px;
+  max-width: 1000px;
+  margin: 30px auto 0 auto;
+}
+
+.cert-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  /* Removed fixed width so grid controls the sizing */
+  box-shadow: 0 4px 15px rgba(0, 31, 63, 0.08);
+  transition: all 0.3s ease;
+  text-align: left;
+  border: 1px solid #024990;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.cert-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(2, 114, 151, 0.2);
+}
+
+.cert-card h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #00366b;
+  min-height: 2.8rem; /* Keeps titles aligned */
+}
+
+.cert-card p {
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+  color: #6a7783;
+  line-height: 1.4;
+}
+
+.cert-skills {
+  font-style: italic;
+  margin-top: 8px !important;
+}
+
+.btn-cert, .btn-achievement {
+  display: block;
+  width: 70%; /* Makes button fill card width */
+  margin-top: 15px;
+  padding: 8px 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 25px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.btn-cert {
+  color: #001f3f;
+  background-color: #e1f2ff;
+  border: 1px solid #027297;
+}
+
+.btn-cert:hover {
+  background-color: #027297;
+  color: white;
+}
+
+.btn-achievement {
+  color: #027297;
+  background-color: transparent;
+  border: 1px dashed #027297;
+}
+
+/* --- RESPONSIVE LOGIC --- */
+
+/* Tablets: 2 per row */
+@media (max-width: 1024px) {
+  .certifications-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile: 1 per row */
+@media (max-width: 600px) {
+  .certifications-container {
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+  }
+}

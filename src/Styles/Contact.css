@@ -1,0 +1,103 @@
+#contact {
+  padding: 80px 50px;
+  color: #001f3f;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  background-color: #e6f0fc;;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #001f3f;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: "";
+  width: 90%;
+  height: 2px;
+  background-color: #027297;
+  display: block;
+  margin: 10px auto 0 auto;
+  border-radius: 2px;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 500px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px 15px;
+  border: 1px solid #027297;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #016080;
+}
+
+.btn-submit {
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background-color: #00366b;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-submit:hover {
+  background-color: #016080;
+}
+
+.contact-info {
+  font-size: 0.95rem;
+  color: #003b6f;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-info a {
+  color: #027297;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .contact-form {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
