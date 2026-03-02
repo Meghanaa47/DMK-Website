@@ -36,7 +36,7 @@ const Home = () => {
           </div>
 
           <div className="cta-area">
-            <a href="https://drive.google.com/file/d/1aD983-L5wOrLelvQeYYllIcJqqLpFd7t/view?usp=sharing" 
+            <a href="https://drive.google.com/file/d/14xGPeP_krG9WfGZEVWEQuEK9H4VxbeSr/view?usp=sharing" 
                target="_blank" 
                rel="noreferrer" 
                className="btn-resume">
