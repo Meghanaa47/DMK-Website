@@ -21,6 +21,15 @@ const projects = [
     type: "Web App",
   },
   {
+  title: "JobFinder Pro",
+  description: "Real-time job search application integrating JSearch API to fetch listings based on role and location.",
+  technologies: ["JavaScript", "REST API", "HTML5", "CSS3"],
+  github: "https://github.com/Meghanaa47/Job_Search_Portal",
+  live: "https://meghanaa47.github.io/Job_Search_Portal/",
+  image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=500",
+  type: "Web App",
+},
+  {
     title: "Personal Portfolio",
     description: "Modern responsive portfolio built with React to showcase my work.",
     technologies: ["React", "JS", "CSS3"],
